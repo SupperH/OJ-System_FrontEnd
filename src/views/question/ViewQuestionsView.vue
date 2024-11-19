@@ -75,6 +75,7 @@ import {
   Question,
   QuestionControllerService,
   QuestionSubmitAddRequest,
+  QuestionSubmitControllerService,
   QuestionVO,
 } from "../../../generated";
 import message from "@arco-design/web-vue/es/message";
@@ -115,7 +116,7 @@ const doSubmit = async () => {
     return;
   }
 
-  const res = await QuestionControllerService.doQuestionSubmitUsingPost({
+  const res = await QuestionSubmitControllerService.doQuestionSubmitUsingPost({
     ...form.value,
     questionId: question.value.id,
   });
