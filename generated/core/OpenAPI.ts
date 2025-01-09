@@ -20,6 +20,7 @@ export type OpenAPIConfig = {
 };
 
 export const OpenAPI: OpenAPIConfig = {
+    /*单体服务请求地址： 8080，cloud服务请求地址8121*/
     BASE: 'http://localhost:8121',
     VERSION: '1.0',
     WITH_CREDENTIALS: true,
